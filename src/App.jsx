@@ -27,12 +27,10 @@ function App() {
         <h1>Expense Tracker</h1>
       </header>
       
-      {/* Left Side - Form Card */}
       <div className="form-section">
         <ExpenseForm onAddExpense={addExpense} />
       </div>
       
-      {/* Right Side - Table Section */}
       <div className="table-section">
         <SearchBar searchTerm={searchTerm} onSearchChange={setSearchTerm} />
         <ExpenseTable expenses={filteredExpenses} />
