@@ -27,3 +27,8 @@ Structure your project folder
 Implement your solution 
 git init to initialize a local git repository
 git add .  and  git commit  inside of the  expense-tracker/ directory as often as you're working.
+
+## Technologies Used
+React
+JavaScript (ES6+)
+CSS
