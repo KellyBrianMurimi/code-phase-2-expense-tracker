@@ -26,19 +26,19 @@ function App() {
       <header className="app-header">
         <h1>Expense Tracker</h1>
       </header>
-      <main className="app-main">
-        <div className="form-section">
-          <ExpenseForm onAddExpense={addExpense} />
-        </div>
-        <div className="controls-section">
-          <SearchBar searchTerm={searchTerm} onSearchChange={setSearchTerm} />
-        </div>
-        <div className="table-section">
-          <ExpenseTable expenses={filteredExpenses} />
-        </div>
-      </main>
+      
+      {/* Left Side - Form Card */}
+      <div className="form-section">
+        <ExpenseForm onAddExpense={addExpense} />
+      </div>
+      
+      {/* Right Side - Table Section */}
+      <div className="table-section">
+        <SearchBar searchTerm={searchTerm} onSearchChange={setSearchTerm} />
+        <ExpenseTable expenses={filteredExpenses} />
+      </div>
     </div>
-  )
+  );
 }
 
 export default App

@@ -1,45 +1,55 @@
 :root {
-  --primary-color: #4a6fa5;
-  --secondary-color: #166088;
-  --background-color: #f8f9fa;
-  --text-color: #333;
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --background-color: #f5f7fa;
+  --card-color: #ffffff;
+  --border-color: #e0e0e0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background-color);
 }
 
 .app-container {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 2rem;
+  align-items: start;
 }
 
 .app-header {
+  grid-column: 1 / -1;
   text-align: center;
-  margin-bottom: 30px;
-  padding-bottom: 15px;
-  border-bottom: 2px solid var(--primary-color);
+  margin-bottom: 1rem;
 }
 
 .app-header h1 {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   font-size: 2.2rem;
-}
-
-.app-main {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
+  margin: 0;
 }
 
 .form-section {
-  background: white;
-  padding: 25px;
+  background: var(--card-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 2rem;
+}
+
+.table-section {
+  background: var(--card-color);
+  padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-.table-section {
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+.search-container {
+  margin-bottom: 1.5rem;
 }
