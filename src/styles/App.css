@@ -1,10 +1,11 @@
 :root {
-  --primary-color: #2c3e50;
-  --secondary-color: #3498db;
-  --background-color: #f5f7fa;
-  --card-color: #ffffff;
-  --border-color: #e0e0e0;
+  --primary-blue: #2c3e50; 
+  --secondary-blue: #3498db; 
+  --accent-color: #2980b9; 
+  --light-gray: #ecf0f1;
+  --white: #ffffff;
 }
+
 
 body {
   margin: 0;
@@ -29,7 +30,7 @@ body {
 }
 
 .app-header h1 {
-  color: var(--primary-color);
+  color: #2c3e50; 
   font-size: 2.2rem;
   margin: 0;
 }
