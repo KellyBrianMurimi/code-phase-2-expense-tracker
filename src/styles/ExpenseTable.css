@@ -1,16 +1,26 @@
 .expense-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.expense-table th {
-  background-color: var(--primary-color);
-  color: white;
-  padding: 10px;
-  text-align: left;
-}
-
-.expense-table td {
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
-}
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+  }
+  
+  .expense-table th {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: 600;
+  }
+  
+  .expense-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .expense-table tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .expense-table tr:hover {
+    background-color: #f8f9fa;
+  }

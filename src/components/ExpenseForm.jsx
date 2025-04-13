@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import './ExpenseForm.css';
+import { useState } from 'react'
+import '../styles/ExpenseForm.css'
 
 function ExpenseForm({ onAddExpense }) {
   const [formData, setFormData] = useState({
@@ -7,16 +7,16 @@ function ExpenseForm({ onAddExpense }) {
     category: 'Utilities',
     amount: '',
     date: ''
-  });
+  })
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault()
     onAddExpense({
       ...formData,
       amount: parseFloat(formData.amount)
-    });
-    setFormData({ name: '', category: 'Utilities', amount: '', date: '' });
-  };
+    })
+    setFormData({ name: '', category: 'Utilities', amount: '', date: '' })
+  }
 
   return (
     <form className="expense-form" onSubmit={handleSubmit}>
@@ -68,7 +68,7 @@ function ExpenseForm({ onAddExpense }) {
       
       <button type="submit" className="submit-btn">Add Expense</button>
     </form>
-  );
+  )
 }
 
-export default ExpenseForm;
+export default ExpenseForm

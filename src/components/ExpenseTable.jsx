@@ -1,4 +1,4 @@
-import './ExpenseTable.css';
+import '../styles/ExpenseTable.css';
 
 function ExpenseTable({ expenses }) {
   return (
