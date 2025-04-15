@@ -31,4 +31,13 @@ git add .  and  git commit  inside of the  expense-tracker/ directory as often a
 ## Technologies Used
 React
 JavaScript (ES6+)
-CSS
+Css
+
+## Deployment
+Static Hosting (GitHub Pages, Vercel)
+Push to main branch (GitHub).
+
+Connect to Vercel.
+
+🌐 Live Demo
+🔗  https://code-phase-2-expense-tracker.vercel.app/
